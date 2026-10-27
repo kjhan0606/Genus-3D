@@ -35,12 +35,23 @@ See the sources for argument details.
 
 ## Build
 
+Detect the environment first (writes `config.make`, git-ignored):
+
 ```sh
+./configure
 make
-make FFTW2=/path/to/fftw2
-make CC=mpiicx FFTW2=/path/to/fftw2
+```
+
+Options (see `./configure --help`):
+
+```sh
+./configure --fftw2 /path/to/fftw2
+./configure --compiler intel
+./configure --cc mpicc --fftw2 /path/to/fftw2
 make clean
 ```
+
+Plain `make` also works with the `CC=mpicc`, `FFTW2=/usr` defaults.
 
 ## Run
 

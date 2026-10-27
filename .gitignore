@@ -11,3 +11,4 @@ statsubg
 statsubg2
 checkplatevol
 *.o
+config.make

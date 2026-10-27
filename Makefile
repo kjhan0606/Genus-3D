@@ -4,6 +4,8 @@ CFLAGS = -O2 -I$(FFTW2)/include
 LDFLAGS = -L$(FFTW2)/lib
 LDLIBS = -lsrfftw_mpi -lsfftw_mpi -lsrfftw -lsfftw -lm
 
+-include config.make
+
 MPI_PROGRAMS = genus genus2 genus3 genus_plate genus_rod genus_rod2 genus_rod3 genus_subcubic sigma12
 SERIAL_PROGRAMS = statsubg statsubg2 checkplatevol
 
